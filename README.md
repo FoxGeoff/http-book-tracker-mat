@@ -11,7 +11,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ### Task: Add: Material Module
 
-* **NB Requires VSCode restart to show the Material Effects**
+* Feature Modules: <https://angular.io/guide/feature-modules>
+* Types of Feature Modules: <https://angular.io/guide/module-types>
+* Lazy Loading: <https://angular.io/guide/lazy-loading-ngmodules>
+* Demo: <https://stackblitz.com/angular/gooyobnvapm?file=src%2Fapp%2Fapp.module.ts>
+
+* **NB May require VSCode restart to show the Effects**
 
 ## Task: Add: Angular flex layout
 
@@ -31,7 +36,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 ```
 
-* **NB Requires VSCode restart to show the Material Effects**
+* **NB May require VSCode restart to show the Material Effects**
 * Flex Layout API: <https://github.com/angular/flex-layout/wiki/Declarative-API-Overview>
 * FLex Layout Responsive API: <https://github.com/angular/flex-layout/wiki/Responsive-API>
 
