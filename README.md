@@ -31,5 +31,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 ```
 
+* **NB Requires VSCode restart to show the Material Effects**
 * Flex Layout API: <https://github.com/angular/flex-layout/wiki/Declarative-API-Overview>
 * FLex Layout Responsive API: <https://github.com/angular/flex-layout/wiki/Responsive-API>
