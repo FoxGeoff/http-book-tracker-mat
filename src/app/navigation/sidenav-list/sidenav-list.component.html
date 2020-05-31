@@ -1,1 +1,36 @@
-<p>sidenav-list works!</p>
+<!--
+  NOTE
+  The opening and closing of the drawer is set
+  by checking the screen size at the time of routing
+  to a new page. This means that if the page is not new
+  the open/close state of the draw is not updated.
+
+  It will be checked when the screen size is changed
+-->
+<mat-nav-list>
+  <a mat-list-item routerLink="/welcome">
+    <mat-icon>home</mat-icon>
+    <span class="nav-text">Home</span>
+  </a>
+  <!-- change to isAuth -->
+  <a *ngIf="isAuth" mat-list-item routerLink="/products">
+    <mat-icon>shopping_basket</mat-icon>
+    <span class="nav-text">Products</span>
+  </a>
+
+  <!-- Authorization -->
+  <a *ngIf="!isAuth" mat-list-item routerLink="/signup">
+    <mat-icon>face</mat-icon>
+    <span class="nav-text">Signup</span>
+  </a>
+  <a *ngIf="!isAuth" mat-list-item routerLink="/login" (click)="Login()">
+    <mat-icon>input</mat-icon>
+    <span class="nav-text">Login</span>
+  </a>
+  <a *ngIf="isAuth" mat-list-item routerLink="/login">
+    <button mat-icon-button (click)="Logout()">
+      <mat-icon>keyboard_tab</mat-icon>
+      <span class="nav-text">Logout</span>
+    </button>
+  </a>
+</mat-nav-list>

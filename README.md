@@ -14,6 +14,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * Feature Modules: <https://angular.io/guide/feature-modules>
 * Types of Feature Modules: <https://angular.io/guide/module-types>
 * Lazy Loading: <https://angular.io/guide/lazy-loading-ngmodules>
+* Frequently-used Modules: <https://angular.io/guide/frequent-ngmodules>
 * Demo: <https://stackblitz.com/angular/gooyobnvapm?file=src%2Fapp%2Fapp.module.ts>
 
 * **NB May require VSCode restart to show the Effects**
