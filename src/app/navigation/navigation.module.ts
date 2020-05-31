@@ -10,6 +10,9 @@ import { SidenavListComponent } from './sidenav-list/sidenav-list.component';
   declarations: [HeaderComponent, SidenavComponent, SidenavListComponent],
   imports: [
     CommonModule
+  ],
+  exports: [
+    SidenavComponent,
   ]
 })
 export class NavigationModule { }
