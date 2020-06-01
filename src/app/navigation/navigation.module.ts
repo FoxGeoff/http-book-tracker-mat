@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MaterialModule } from '../material/material.module';
+import { FlexModule } from '@angular/flex-layout';
+import { NavigationRoutingModule } from './navigation-routing.module';
+
 import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { SidenavListComponent } from './sidenav-list/sidenav-list.component';
-import { MaterialModule } from '../material/material.module';
-import { FlexModule } from '@angular/flex-layout';
+import { WelcomeComponent } from '../welcome/welcome.component';
 
 
 
@@ -12,12 +15,14 @@ import { FlexModule } from '@angular/flex-layout';
   declarations: [
     HeaderComponent,
     SidenavComponent,
-    SidenavListComponent
+    SidenavListComponent,
+    WelcomeComponent,
   ],
   imports: [
     CommonModule,
     MaterialModule,
     FlexModule,
+    NavigationRoutingModule,
   ],
   exports: [
     SidenavComponent,
