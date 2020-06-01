@@ -41,4 +41,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 * Flex Layout API: <https://github.com/angular/flex-layout/wiki/Declarative-API-Overview>
 * FLex Layout Responsive API: <https://github.com/angular/flex-layout/wiki/Responsive-API>
 
-## Task: Add: Navigation Header & Sidenav  
+## Task: Add: Navigation Header & Sidenav
+
+## Task: Add: auth folder files
