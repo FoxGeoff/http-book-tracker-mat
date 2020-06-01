@@ -44,3 +44,5 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 ## Task: Add: Navigation Header & Sidenav
 
 ## Task: Add: auth folder files
+
+## Task: Add: Welcome component
