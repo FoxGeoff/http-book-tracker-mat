@@ -48,3 +48,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 * Add: login component routing
 
 ## Task: Add: Welcome component
+
+## Task: Amending the most recent commit message (locally)
+
+* Run: ```git commit --amend```
+* Run: ```git commit --amend -m "New commit message"```
+* <https://stackoverflow.com/questions/179123/how-to-modify-existing-unpushed-commit-messages#179147>
