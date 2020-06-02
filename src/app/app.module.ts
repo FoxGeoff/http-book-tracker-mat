@@ -14,6 +14,7 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { LoginComponent } from './auth/login/login.component';
 
 import { AuthService } from './auth/auth.service';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { AuthService } from './auth/auth.service';
     WelcomeComponent,
     SignupComponent,
     LoginComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     CommonModule,

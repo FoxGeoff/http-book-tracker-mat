@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { LoginComponent } from './auth/login/login.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
    { path: 'welcome', component: WelcomeComponent },
@@ -11,7 +12,7 @@ const routes: Routes = [
    { path: 'login', component: LoginComponent },
 
    { path: '', component: WelcomeComponent, pathMatch: 'full' }, // redirect
-   // { path: '**', component: PageNotFoundComponent },  // Wildcard route for a 404 page
+   { path: '**', component: PageNotFoundComponent },  // Wildcard route for a 404 page
 
   ];
 @NgModule({
