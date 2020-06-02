@@ -1,10 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module'; // CLI imports AppRoutingModule
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+
+
+import { NavigationModule } from './navigation/navigation.module';
 
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -20,9 +23,9 @@ import { AuthService } from './auth/auth.service';
   declarations: [
     AppComponent,
 
-    SidenavComponent,
-    SidenavListComponent,
-    HeaderComponent,
+    // SidenavComponent,
+    // SidenavListComponent,
+    // HeaderComponent,
 
     WelcomeComponent,
     SignupComponent,
@@ -31,12 +34,13 @@ import { AuthService } from './auth/auth.service';
   imports: [
     CommonModule,
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule, // CLI adds AppRoutingModule to the AppModule's imports array
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
     FormsModule,
     ReactiveFormsModule,
+    NavigationModule,
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
