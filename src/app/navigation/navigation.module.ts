@@ -16,7 +16,6 @@ import { WelcomeComponent } from '../welcome/welcome.component';
     HeaderComponent,
     SidenavComponent,
     SidenavListComponent,
-    WelcomeComponent,
   ],
   imports: [
     CommonModule,
