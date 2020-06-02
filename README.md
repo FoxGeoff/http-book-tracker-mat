@@ -58,4 +58,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 ## Task: Add: BooksComponent
 
-## Task:Add Material Table Books
+## Task: Add: Material Table Books
+
+* Add: Book Model
