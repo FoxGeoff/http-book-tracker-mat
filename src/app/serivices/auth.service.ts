@@ -2,8 +2,8 @@ import { Subject } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { User } from './user.model';
-import { AuthData } from './auth-data.model';
+import { User } from '../models/user.model';
+import { AuthData } from '../models/auth-data.model';
 @Injectable()
 export class AuthService {
   authChange = new Subject<boolean>();

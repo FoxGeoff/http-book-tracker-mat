@@ -16,7 +16,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { BooksComponent } from './books/books.component';
 // Services
-import { AuthService } from './auth/auth.service';
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   declarations: [
