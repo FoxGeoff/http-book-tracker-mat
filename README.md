@@ -60,5 +60,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 ## Task: Add: Material Table Books
 
-* Add: book Model
-* Add: bookTrakerError
+* Add: book model
+* Add: bookTrakerError model
+* Add: reader model
