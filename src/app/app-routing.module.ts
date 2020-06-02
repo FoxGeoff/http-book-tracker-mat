@@ -10,15 +10,15 @@ import { BooksComponent } from './books/books.component';
 import { AuthGuard } from './auth/auth.guard';
 
 const routes: Routes = [
-   { path: 'welcome', component: WelcomeComponent },
-   { path: 'signup', component: SignupComponent },
-   { path: 'login', component: LoginComponent },
-   { path: 'books', component: BooksComponent, canActivate: [AuthGuard]  },
+  { path: 'welcome', component: WelcomeComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'books', component: BooksComponent }, // , canActivate: [AuthGuard]
 
-   { path: '', component: WelcomeComponent, pathMatch: 'full' }, // redirect
-   { path: '**', component: PageNotFoundComponent },  // Wildcard route for a 404 page
+  { path: '', component: WelcomeComponent, pathMatch: 'full' }, // redirect
+  { path: '**', component: PageNotFoundComponent },  // Wildcard route for a 404 page
 
-  ];
+];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
