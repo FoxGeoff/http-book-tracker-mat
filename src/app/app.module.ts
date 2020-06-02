@@ -12,9 +12,11 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { LoginComponent } from './auth/login/login.component';
-
-import { AuthService } from './auth/auth.service';
+// Components
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { BooksComponent } from './books/books.component';
+// Services
+import { AuthService } from './auth/auth.service';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     SignupComponent,
     LoginComponent,
     PageNotFoundComponent,
+    BooksComponent,
   ],
   imports: [
     CommonModule,

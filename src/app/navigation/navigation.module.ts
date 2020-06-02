@@ -8,6 +8,8 @@ import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { SidenavListComponent } from './sidenav-list/sidenav-list.component';
 
+import { AuthGuard } from '../auth/auth.guard';
+
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -20,8 +22,6 @@ import { SidenavListComponent } from './sidenav-list/sidenav-list.component';
     MaterialModule,
     AppRoutingModule,
   ],
-  exports: [
-    SidenavComponent,
-  ]
+  exports: [SidenavComponent],
 })
 export class NavigationModule { }
