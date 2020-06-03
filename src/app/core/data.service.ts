@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { allBooks, allReaders } from 'app/data';
+import { allBooks, allReaders } from '../data';
 import { Reader } from '../models/reader';
 import { Book } from '../models/book';
 import { BookTrackerError } from '../models/bookTrakerError';
