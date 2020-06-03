@@ -69,3 +69,4 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 * Add: core files
 * Add: table pagination
+* Add: table select column
