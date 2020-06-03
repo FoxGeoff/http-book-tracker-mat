@@ -17,6 +17,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { BooksComponent } from './books/books.component';
 // Services
 import { AuthService } from './services/auth.service';
+import { DataService } from './core/data.service';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,7 @@ import { AuthService } from './services/auth.service';
     ReactiveFormsModule,
     NavigationModule,
   ],
-  providers: [AuthService],
+  providers: [AuthService, DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
