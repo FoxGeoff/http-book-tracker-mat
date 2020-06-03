@@ -64,3 +64,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 * Add: bookTrakerError model
 * Add: reader model
 * Add: data
+
+## Task: Connect books table to data
+
+* Add: core files
