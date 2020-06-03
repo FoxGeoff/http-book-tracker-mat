@@ -63,3 +63,4 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 * Add: book model
 * Add: bookTrakerError model
 * Add: reader model
+* Add: data
