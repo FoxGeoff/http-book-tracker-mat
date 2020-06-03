@@ -68,3 +68,4 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 ## Task: Connect books table to data
 
 * Add: core files
+* Add: table pagination
