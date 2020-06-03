@@ -1,9 +1,7 @@
-.Container {
-  position: absolute;
-  width: 100%;
-}
-table {
-  width: 90%;
+.container {
   margin: 20px;
-  position: absolute;
+}
+
+ table {
+  width: 100%;
 }
