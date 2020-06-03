@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 
 import { allBooks, allReaders } from 'app/data';
-import { Reader } from "app/models/reader";
-import { Book } from "app/models/book";
-import { BookTrackerError } from 'app/models/bookTrackerError';
+import { Reader } from '../models/reader';
+import { Book } from '../models/book';
+import { BookTrackerError } from '../models/bookTrakerError';
 
 @Injectable()
 export class DataService {
@@ -30,5 +30,5 @@ export class DataService {
 
   getBookById(id: number): Book {
     return allBooks.find(book => book.bookID === id);
-  }  
+  }
 }
