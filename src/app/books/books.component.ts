@@ -14,7 +14,7 @@ import { SelectionModel } from '@angular/cdk/collections';
 })
 export class BooksComponent implements OnInit {
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
-  displayedColumns: string[] = ['select', 'info', 'title', 'author', 'publicationYear'];
+  displayedColumns: string[] = ['select', 'details', 'delete', 'title', 'author', 'publicationYear'];
   dataSource: any;
   /**  Add selection column  */
   selection = new SelectionModel<Book>(true, []);

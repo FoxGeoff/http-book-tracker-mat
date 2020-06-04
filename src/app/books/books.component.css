@@ -6,7 +6,7 @@ table {
   width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
-  min-width: 300px;
+  min-width: 500px;
 }
 
 mat-checkbox {
@@ -24,6 +24,5 @@ td.mat-cell {
 }
 
 .mat-icon {
-  color:blue;
   margin-bottom: 5px;
 }
