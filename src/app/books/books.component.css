@@ -11,8 +11,7 @@ mat-checkbox {
 }
 
 td {
-  color: blueviolet;
-  border: black;
+  width: 100px;
 }
 
 .mat-form-field {
