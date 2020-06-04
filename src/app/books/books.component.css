@@ -2,21 +2,25 @@
   margin: 20px;
 }
 
- table {
+table {
   width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  min-width: 300px;
 }
 
 mat-checkbox {
   margin-right: 20px;
 }
 
-td {
-  width: 100px;
+/* Header row */
+th.mat-header-cell {
+  text-align: left;
 }
-
-.mat-form-field {
-  font-size: 14px;
-  width: 100%;
+/* Header row */
+td.mat-cell {
+  text-align: left;
+  font-size: smaller;
 }
 
 .mat-icon {
