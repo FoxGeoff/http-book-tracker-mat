@@ -9,3 +9,18 @@
 mat-checkbox {
   margin-right: 20px;
 }
+
+td {
+  color: blueviolet;
+  border: black;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.mat-icon {
+  color:blue;
+  margin-bottom: 5px;
+}

@@ -14,7 +14,7 @@ import { SelectionModel } from '@angular/cdk/collections';
 })
 export class BooksComponent implements OnInit {
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
-  displayedColumns: string[] = ['select', 'bookID', 'title', 'author', 'publicationYear'];
+  displayedColumns: string[] = ['select', 'info', 'bookID', 'title', 'author', 'publicationYear'];
   dataSource: any;
   /**  Add selection column  */
   selection = new SelectionModel<Book>(true, []);
@@ -53,8 +53,8 @@ export class BooksComponent implements OnInit {
   /** Selects all rows if they are not all selected; otherwise clear selection. */
   masterToggle() {
     this.isAllSelected() ?
-        this.selection.clear() :
-        this.dataSource.data.forEach(row => this.selection.select(row));
+      this.selection.clear() :
+      this.dataSource.data.forEach(row => this.selection.select(row));
   }
 
   /** Whether the number of selected elements matches the total number of rows. */
@@ -70,6 +70,10 @@ export class BooksComponent implements OnInit {
       return `${this.isAllSelected() ? 'select' : 'deselect'} all`;
     }
     return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.bookID + 1}`;
+  }
+
+  onRowClicked(row: any) {
+    console.log(`Row clicked (year): ${row.title}`);
   }
 
 }
