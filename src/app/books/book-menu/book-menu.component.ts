@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { NewBookDialogComponent } from '../new-book-dialog/new-book-dialog.component';
 
 @Component({
   selector: 'app-book-menu',
@@ -6,10 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./book-menu.component.css']
 })
 export class BookMenuComponent implements OnInit {
+  @Output() toggleSidenav = new EventEmitter<void>();
 
-  constructor() { }
+  constructor(private dialog: MatDialog) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+  }
+
+  openAddContactDialog(): void {
+    const dialogRef = this.dialog.open(NewBookDialogComponent,
+      { width: '450px' });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dailog is closed', result);
+    });
   }
 
 }

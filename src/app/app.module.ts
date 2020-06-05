@@ -21,6 +21,7 @@ import { DataService } from './core/data.service';
 import { BookTableComponent } from './books/book-table/book-table.component';
 import { ReaderTableComponent } from './books/reader-table/reader-table.component';
 import { BookMenuComponent } from './books/book-menu/book-menu.component';
+import { NewBookDialogComponent } from './books/new-book-dialog/new-book-dialog.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { BookMenuComponent } from './books/book-menu/book-menu.component';
     BookTableComponent,
     ReaderTableComponent,
     BookMenuComponent,
+    NewBookDialogComponent,
   ],
   imports: [
     CommonModule,
