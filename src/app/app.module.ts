@@ -19,6 +19,7 @@ import { BooksComponent } from './books/books.component';
 import { AuthService } from './services/auth.service';
 import { DataService } from './core/data.service';
 import { BookTableComponent } from './books/book-table/book-table.component';
+import { ReaderTableComponent } from './books/reader-table/reader-table.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { BookTableComponent } from './books/book-table/book-table.component';
     PageNotFoundComponent,
     BooksComponent,
     BookTableComponent,
+    ReaderTableComponent,
   ],
   imports: [
     CommonModule,

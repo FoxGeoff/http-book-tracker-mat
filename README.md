@@ -65,7 +65,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 * Add: reader model
 * Add: data
 
-## Task: Connect books table to data
+## Task: Connect: books table to data
 
 * Add: core files
 * Add: table pagination
@@ -80,3 +80,5 @@ ngAfterViewInit(): void {
     this.dataSource.sort = this.sort;
   }
 ```
+
+## Task: Add: reader-table.component

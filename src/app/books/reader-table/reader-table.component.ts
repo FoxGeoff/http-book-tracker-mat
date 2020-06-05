@@ -8,12 +8,11 @@ import { Title } from '@angular/platform-browser';
 import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
-  selector: 'app-book-table',
-  templateUrl: './book-table.component.html',
-  styleUrls: ['./book-table.component.css']
+  selector: 'app-reader-table',
+  templateUrl: './reader-table.component.html',
+  styleUrls: ['./reader-table.component.css']
 })
-export class BookTableComponent implements OnInit, AfterViewInit {
-
+export class ReaderTableComponent implements OnInit, AfterViewInit {
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
   displayedColumns: string[] = ['select', 'details', 'delete', 'title', 'author', 'publicationYear'];
   dataSource: any;
@@ -78,5 +77,6 @@ export class BookTableComponent implements OnInit, AfterViewInit {
   onRowClicked(row: any) {
     console.log(`Row clicked (year): ${row.title}`);
   }
+
 
 }
