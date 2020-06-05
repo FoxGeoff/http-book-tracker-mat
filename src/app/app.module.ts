@@ -20,6 +20,7 @@ import { AuthService } from './services/auth.service';
 import { DataService } from './core/data.service';
 import { BookTableComponent } from './books/book-table/book-table.component';
 import { ReaderTableComponent } from './books/reader-table/reader-table.component';
+import { BookMenuComponent } from './books/book-menu/book-menu.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ReaderTableComponent } from './books/reader-table/reader-table.componen
     BooksComponent,
     BookTableComponent,
     ReaderTableComponent,
+    BookMenuComponent,
   ],
   imports: [
     CommonModule,

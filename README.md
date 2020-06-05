@@ -82,3 +82,7 @@ ngAfterViewInit(): void {
 ```
 
 ## Task: Add: reader-table.component
+
+## Task Add: new-book-dialog.component
+
+## Task: Switch Data source
