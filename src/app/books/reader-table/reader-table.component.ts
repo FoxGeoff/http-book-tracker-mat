@@ -64,5 +64,4 @@ export class ReaderTableComponent implements OnInit, AfterViewInit {
     console.log(`Row clicked (year): ${row.title}`);
   }
 
-
 }

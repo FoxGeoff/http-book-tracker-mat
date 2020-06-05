@@ -19,10 +19,9 @@ export class BookTableComponent implements OnInit, AfterViewInit {
   dataSource: any;
   /**  Add selection column  */
   selection = new SelectionModel<Book>(true, []);
+  allBooks: Book[];
 
   /** todo: add these data tables  */
-  allBooks: Book[];
-  allReaders: Reader[];
   mostPopularBook: Book;
 
   /**  Note use of browser title service  */
@@ -33,7 +32,6 @@ export class BookTableComponent implements OnInit, AfterViewInit {
     this.dataSource = new MatTableDataSource<Book>(this.allBooks);
 
     /** todo: add these data tables  */
-    this.allReaders = this.dataService.getAllReaders();
     this.mostPopularBook = this.dataService.mostPopularBook;
 
     this.title.setTitle(`Book Tracker`);
