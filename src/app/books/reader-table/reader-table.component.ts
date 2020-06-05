@@ -13,7 +13,7 @@ import { MatTableDataSource } from '@angular/material/table';
 })
 export class ReaderTableComponent implements OnInit, AfterViewInit {
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
-  displayedColumns: string[] = ['select', 'details', 'delete', 'name', 'totalMinutesRead', 'weeklyReadingGoal'];
+  displayedColumns: string[] = ['select', 'details', 'delete', 'name', 'weeklyReadingGoal', 'totalMinutesRead'];
   dataSource: any;
   /**  Add selection column  */
   selection = new SelectionModel<Reader>(true, []);

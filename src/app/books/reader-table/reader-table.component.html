@@ -59,14 +59,14 @@
 
     <!-- weeklyReadingGoal Column -->
     <ng-container matColumnDef="weeklyReadingGoal">
-      <th mat-header-cell *matHeaderCellDef>Goal(mins)</th>
-      <td mat-cell *matCellDef="let reader">{{ reader.weeklyReadingGoal }}</td>
+      <th mat-header-cell *matHeaderCellDef>Weekly Goal</th>
+      <td mat-cell *matCellDef="let reader">{{ reader.weeklyReadingGoal }} mins</td>
     </ng-container>
 
     <!-- Publication Year Column -->
     <ng-container matColumnDef="totalMinutesRead">
-      <th mat-header-cell *matHeaderCellDef>Read(mins)</th>
-      <td mat-cell *matCellDef="let reader">{{ reader.totalMinutesRead }}</td>
+      <th mat-header-cell *matHeaderCellDef>Total Read</th>
+      <td mat-cell *matCellDef="let reader">{{ reader.totalMinutesRead }} mins</td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
