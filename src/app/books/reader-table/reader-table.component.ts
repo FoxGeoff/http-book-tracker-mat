@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { SelectionModel } from '@angular/cdk/collections';
-import { Book } from 'src/app/models/book';
 import { Reader } from 'src/app/models/reader';
 import { DataService } from 'src/app/core/data.service';
 import { Title } from '@angular/platform-browser';
@@ -14,28 +13,20 @@ import { MatTableDataSource } from '@angular/material/table';
 })
 export class ReaderTableComponent implements OnInit, AfterViewInit {
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
-  displayedColumns: string[] = ['select', 'details', 'delete', 'title', 'author', 'publicationYear'];
+  displayedColumns: string[] = ['select', 'details', 'delete', 'name', 'totalMinutesRead', 'weeklyReadingGoal'];
   dataSource: any;
   /**  Add selection column  */
-  selection = new SelectionModel<Book>(true, []);
-
-  /** todo: add these data tables  */
-  allBooks: Book[];
+  selection = new SelectionModel<Reader>(true, []);
   allReaders: Reader[];
-  mostPopularBook: Book;
 
   /**  Note use of browser title service  */
   constructor(private dataService: DataService, private title: Title) { }
 
   ngOnInit(): void {
-    this.allBooks = this.dataService.getAllBooks();
-    this.dataSource = new MatTableDataSource<Book>(this.allBooks);
-
-    /** todo: add these data tables  */
     this.allReaders = this.dataService.getAllReaders();
-    this.mostPopularBook = this.dataService.mostPopularBook;
+    this.dataSource = new MatTableDataSource<Reader>(this.allReaders);
 
-    this.title.setTitle(`Book Tracker`);
+    this.title.setTitle(`Reader Tracker`);
   }
 
   ngAfterViewInit(): void {
@@ -43,13 +34,8 @@ export class ReaderTableComponent implements OnInit, AfterViewInit {
   }
 
   /** PS-Angular http communicaton */
-  deleteBook(bookID: number): void {
-    console.warn(`Delete book not yet implemented (bookID: ${bookID}).`);
-  }
-
-  /** PS-Angular http communicaton */
-  deleteReader(readerID: number): void {
-    console.warn(`Delete reader not yet implemented (readerID: ${readerID}).`);
+  deleteReader(ReaderID: number): void {
+    console.warn(`Delete Reader not yet implemented (ReaderID: ${ReaderID}).`);
   }
 
   /** Selects all rows if they are not all selected; otherwise clear selection. */
@@ -67,11 +53,11 @@ export class ReaderTableComponent implements OnInit, AfterViewInit {
   }
 
   /** The label for the checkbox on the passed row */
-  checkboxLabel(row?: Book): string {
+  checkboxLabel(row?: Reader): string {
     if (!row) {
       return `${this.isAllSelected() ? 'select' : 'deselect'} all`;
     }
-    return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.bookID + 1}`;
+    return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.readerID + 1}`;
   }
 
   onRowClicked(row: any) {
