@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { DataService } from '../../core/data.service';
 import { Book } from '../../models/book';
 import { Reader } from '../../models/reader';
@@ -12,7 +12,7 @@ import { SelectionModel } from '@angular/cdk/collections';
   templateUrl: './book-table.component.html',
   styleUrls: ['./book-table.component.css']
 })
-export class BookTableComponent implements OnInit {
+export class BookTableComponent implements OnInit, AfterViewInit {
 
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
   displayedColumns: string[] = ['select', 'details', 'delete', 'title', 'author', 'publicationYear'];
@@ -20,25 +20,27 @@ export class BookTableComponent implements OnInit {
   /**  Add selection column  */
   selection = new SelectionModel<Book>(true, []);
 
-  // todo: add these data tables
+  /** todo: add these data tables  */
   allBooks: Book[];
   allReaders: Reader[];
   mostPopularBook: Book;
 
   /**  Note use of browser title service  */
-  constructor(private dataService: DataService, private title: Title) {
-    this.allBooks = this.dataService.getAllBooks();
-    this.dataSource = new MatTableDataSource<Book>(this.allBooks);
-  }
+  constructor(private dataService: DataService, private title: Title) { }
 
   ngOnInit(): void {
-    this.dataSource.paginator = this.paginator;
+    this.allBooks = this.dataService.getAllBooks();
+    this.dataSource = new MatTableDataSource<Book>(this.allBooks);
 
-    // todo: add these data tables
+    /** todo: add these data tables  */
     this.allReaders = this.dataService.getAllReaders();
     this.mostPopularBook = this.dataService.mostPopularBook;
 
     this.title.setTitle(`Book Tracker`);
+  }
+
+  ngAfterViewInit(): void {
+    this.dataSource.paginator = this.paginator;
   }
 
   /** PS-Angular http communicaton */
