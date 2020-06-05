@@ -1,28 +1,3 @@
 .card {
   margin: 20px;
 }
-
-table {
-  width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  min-width: 500px;
-}
-
-mat-checkbox {
-  margin-right: 20px;
-}
-
-/* Header row */
-th.mat-header-cell {
-  text-align: left;
-}
-/* Header row */
-td.mat-cell {
-  text-align: left;
-  font-size: smaller;
-}
-
-.mat-icon {
-  margin-bottom: 5px;
-}

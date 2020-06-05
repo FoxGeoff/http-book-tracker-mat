@@ -72,4 +72,4 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 * Add: table select column (checkboxes)
 * Add: table select column action <https://stackoverflow.com/questions/17358954/angularjs-applying-action-on-selected-checkboxes-in-table#17359542>
 * Example #1: <https://code-maze.com/angular-material-table/>
-* Example #2:
+* Add: Book Table component

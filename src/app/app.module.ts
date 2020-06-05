@@ -18,6 +18,7 @@ import { BooksComponent } from './books/books.component';
 // Services
 import { AuthService } from './services/auth.service';
 import { DataService } from './core/data.service';
+import { BookTableComponent } from './books/book-table/book-table.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { DataService } from './core/data.service';
     LoginComponent,
     PageNotFoundComponent,
     BooksComponent,
+    BookTableComponent,
   ],
   imports: [
     CommonModule,
