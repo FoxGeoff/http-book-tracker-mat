@@ -1,6 +1,12 @@
+mat-toolbar {
+ position: fixed;
+ overflow: auto;
+ width: 100%;
+ z-index: 1;
+}
+
 .sidenav-toggle {
   display: none;
-
   padding: 0;
   margin: 8px;
   min-width: 56px;
