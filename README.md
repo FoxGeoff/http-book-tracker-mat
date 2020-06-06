@@ -40,6 +40,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 * **NB May require VSCode restart to show the Material Effects**
 * Flex Layout API: <https://github.com/angular/flex-layout/wiki/Declarative-API-Overview>
 * FLex Layout Responsive API: <https://github.com/angular/flex-layout/wiki/Responsive-API>
+* Flex Layout blog: <https://www.angularjswiki.com/flexlayout/basics/>
 
 ## Task: Add: Navigation Header & Sidenav
 
