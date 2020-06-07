@@ -87,3 +87,17 @@ ngAfterViewInit(): void {
 ## Task Add: new-book-dialog.component
 
 ## Task: Switch Data source
+
+## Task: Switch Data source to http server <<here
+
+## Task: Add Express server files
+
+### TODO
+
+* Add loading icon
+* Add sidnav button onto book toolbar
+* Add light/dark theme
+* Add email customer invoice
+* Add OAuth and OpenID server
+
+***

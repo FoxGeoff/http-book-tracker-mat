@@ -9,12 +9,14 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { SidenavListComponent } from './sidenav-list/sidenav-list.component';
 
 import { AuthGuard } from '../auth/auth.guard';
+import { SideHeaderComponent } from './side-header/side-header.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     SidenavComponent,
     SidenavListComponent,
+    SideHeaderComponent,
   ],
   imports: [
     CommonModule,
