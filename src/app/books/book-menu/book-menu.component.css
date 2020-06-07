@@ -11,12 +11,15 @@ mat-toolbar {
   margin: 8px;
   min-width: 56px;
 }
+
+.sidenav-toggle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 500px) {
-  .sidenav-toggle{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
+ /*  replace with fxhide.gt.ms  */
 }
 
 .mat-icon {
@@ -24,7 +27,6 @@ mat-toolbar {
   height: 56px;
   width: 56px;
   line-height: 56px;
-  color: white;
 }
 
 .fill-remaining-space {

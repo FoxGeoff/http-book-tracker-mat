@@ -1,9 +1,16 @@
-<mat-toolbar>
-  <button mat-button class="sidenav-toggle" (click)="toggleSidenav.emit()">
+<mat-toolbar fxLayoutAlign="start center">
+  <button
+    mat-button
+    color="accent"
+    class="sidenav-toggle"
+    (click)="toggleSidenav.emit()"
+  >
     <mat-icon class="mat-icon">menu</mat-icon>
   </button>
-  <span>Contact Manager</span>
-  <span class="fill-remaining-space"></span>
+
+  <span fxHide.lt-md>Contact Manager</span>
+
+  <div class="fill-remaining-space"></div>
 
   <button mat-icon-button [matMenuTriggerFor]="menu">
     <mat-icon>more_vert</mat-icon>
