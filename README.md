@@ -90,6 +90,8 @@ ngAfterViewInit(): void {
 
 ## Task: Switch Data source to http server <<here
 
+* Add: dataService
+
 ## Task: Add Express server files
 
 ### TODO
