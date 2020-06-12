@@ -16,5 +16,5 @@ export class DataServiceService {
       .pipe(
         catchError(err => this.handleHttpError(err))
       );
-  };
+  }
 }
